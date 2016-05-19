@@ -47,8 +47,8 @@ class app {
                          this.render(req.url.slice(1), 'application/ecmascript', httpHandler, 'utf-8');
                     } else if (req.url.indexOf('/css/') >= 0) {
                          this.render(req.url.slice(1), 'text/css', httpHandler, 'utf-8');
-                    } else if (req.url.indexOf('/images/') >= 0) {
-                         this.render(req.url.slice(1), 'image/jpeg', httpHandler, 'binary');
+                    } else if (req.url.indexOf('/pics/') >= 0) {
+                         this.render(req.url.slice(1), 'image/png', httpHandler, 'binary');
                     } else {
                          this.render('public/views/index.ejs', 'text/html', httpHandler, 'utf-8');
                     }

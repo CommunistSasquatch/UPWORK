@@ -1,74 +1,166 @@
 <% include public/views/header.ejs %>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<h1 id="title">Vantage<img src="public/views/pics/logo.png">Leasing</h1>
-<h5 id="welcome">Welcome (PlaceHolder)! Please fill in our secure online application form to proceed with your order.</h5>
+<h1 id="title"><img src="public/views/pics/logo.png"></h1>
 <div id="accordion" role="tablist" aria-multiselectable="true">
+    <h5 id="welcome">Welcome (PlaceHolder)! Please fill in our secure online application form to proceed with your order.</h5>
+    <!--First Panel-->
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-                <a clase="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <a clase="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                   aria-expanded="false" aria-controls="collapseOne">
                     About Your Company
-                     </a>
+                </a>
             </h4>
         </div>
         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-            We can obtain some information from Companies House if you are a UK Limited Company or PLC (If you want us to do this please fill in your Company Reg No and press Lookup).
+            <p> We can obtain some information from Companies House if you are a UK Limited Company or PLC (If you want
+                us to do this please fill in your Company Reg No and press Lookup).</p>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Title</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <select id="company_Reg_Num" type="text" maxlength="12">
 
-        </div>
-    </div>
-    <!--Second Flap-->
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    About The Directors
-                </a>
-            </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            About The Directors
-        </div>
-    </div>
-    <!--Third Flap-->
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Your Address Details
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-           Your Address Details
-        </div>
-    </div>
-    <!--Fourth Flap-->
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingFour">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Your Bank Details
-                </a>
-            </h4>
-        </div>
-        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-            Your Bank Details
-        </div>
-    </div>
-</div>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Business Name*</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <input id="business_name" type="text" maxlength="100">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Forename*</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <input id="forename" type="text" maxlength="100">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Surname*</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <input id="surname" type="text" maxlength="100">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-5=">
+                            <span>Email Address*</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <input id="p_email" type="text" maxlength="100">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Mobile Number*</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <input id="mobile_number" type="text" maxlength="100">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Date of Birth*</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <input id="birthday" type="date" maxlength="8">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Marital Status*</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <select id="married">
 
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Dependents</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <input id="dependents" type="text" maxlength="10">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Credit/Store Cards Held</span>
+                        </div>
+                        <div class="col-lg-5">
+                            <input id="dependents" type="text" maxlength="20">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Second Flap-->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                       aria-expanded="false" aria-controls="collapseTwo">
+                        About The Directors
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                About The Directors
+            </div>
+        </div>
+        <!--Third Flap-->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                       aria-expanded="false" aria-controls="collapseThree">
+                        Your Address Details
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                Your Address Details
+            </div>
+        </div>
+        <!--Fourth Flap-->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                       aria-expanded="false" aria-controls="collapseFour">
+                        Your Bank Details
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                Your Bank Details
+            </div>
+        </div>
+    </div>
 </div>
 </html>
 

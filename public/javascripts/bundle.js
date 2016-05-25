@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 *   @author Joe Barbercheck [ hbates@northmen.org ]
+	 *   @author Joe Barbercheck [mothman147@gmail.com ]
 	 *   @version 0.0.1
 	 *   @summary http server: Work order app || Created: 05.11.2016
 	 *   @todo
